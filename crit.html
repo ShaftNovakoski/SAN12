@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gerador de dano crítico</title>
+    <link rel="stylesheet" href="crit.css">
+  </head>
+  <body>
+    <button onclick="geraCritico()"type="button" id="botão" name="Crit-button">Gerar Critico</button>
+
+  </body>
+  <script src="separador.js"></script>
+  <script src="criter.js"></script>
+  <script>
+      console.log("Este botão está funcionando");
+      function geraCritico() {
+        let botão = document.querySelector("#botão");
+        let rodaCrit = new criter();
+        botão.addEventListener("click", rodaCrit.geraNumero());
+      };
+
+
+
+  </script>
+</html>
